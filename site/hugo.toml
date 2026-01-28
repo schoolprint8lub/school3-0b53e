@@ -1,6 +1,6 @@
 baseurl = "/"
-languageCode = "uk-ua"
-languageLang = "uk"
+languageCode = "en-us"
+languageLang = "en"
 title = "Моя Школа"
 
 # RSS, categories and tags disabled for an easy start
