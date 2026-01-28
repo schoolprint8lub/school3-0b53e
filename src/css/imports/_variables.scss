@@ -1,25 +1,25 @@
 :root {
-	/* Colors */
-	--primary: rgba(255, 68, 0, 1);
-	--highlight: rgba(254, 213, 198, 1);
-	--white: rgba(255, 255, 255, 1);
-	--off-white: rgba(255, 253, 252, 1);
-	--grey-1: rgba(245, 243, 242, 1);
-	--grey-2: rgba(235, 231, 230, 1);
-	--grey-3: rgba(89, 87, 86, 1);
-	--grey-4: rgba(66, 64, 64, 1);
-	--black: rgba(43, 37, 35, 1);
+	/* Colors: Modern School Palette */
+	--primary: #2563eb; /* Royal Blue */
+	--highlight: #f59e0b; /* Amber/Gold */
+	--white: #ffffff;
+	--off-white: #f8fafc;
+	--grey-1: #f1f5f9;
+	--grey-2: #e2e8f0;
+	--grey-3: #64748b;
+	--grey-4: #475569;
+	--black: #0f172a;
 
 	/* Typography */
-	--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-	--line-height: 1.5;
+	--font-family: 'Inter', system-ui, sans-serif;
+	--line-height: 1.6;
 
-	--font-size: 18px;
-	--font-size-m: 20px;
-	--font-size-l: 22px;
+	--font-size: 16px;
+	--font-size-m: 18px;
+	--font-size-l: 24px;
 
 	--body-font-weight: 400;
-	--bold-font-weight: 700;
+	--bold-font-weight: 600;
 
 	/* Sizing */
 	--spacing-none: 0;
@@ -31,7 +31,7 @@
 	--spacing-extra-extra-large: 8rem;
 	--spacing-extra-extra-extra-large: 16rem;
 
-	/* Miscelaneous */
-	--border-radius: .25rem;
-	--hover-transition: all 150ms ease;
+	/* Miscellaneous */
+	--border-radius: 0.5rem;
+	--hover-transition: all 200ms ease;
 }

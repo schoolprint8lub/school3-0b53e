@@ -1,18 +1,29 @@
-<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('{{.imageUrl}}')">
-  <div class="mw7 center ph3">
-    <div class="db mb3">
-      <div class="mw7 relative bg-fix-primary mb3">
-        <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-          {{.title}}
-        </h1>
-      </div>
-      <div class="mw7 relative bg-fix-primary">
-        {{ if .subtitle }}
-        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
-          {{.subtitle}}
-        </p>
-        {{ end }}
-      </div>
+<div class="relative flex items-center justify-center pv6 pv7-l bg-center cover"
+  style="background-image: url('{{.imageUrl}}'); min-height: 600px;">
+  <!-- Dark Overlay -->
+  <div class="absolute top-0 left-0 w-100 h-100" style="background: rgba(0,0,0,0.4);"></div>
+
+  <!-- Content -->
+  <div class="relative z-2 tc ph3 mw8 center white">
+    <h1 class="f2 f-subheadline-l b lh-title mb3" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+      {{.title}}
+    </h1>
+    {{ if .subtitle }}
+    <p class="f4 f3-l lh-copy mb4 o-90 fw6" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+      {{.subtitle}}
+    </p>
+    {{ end }}
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-column flex-row-l justify-center items-center gap-3">
+      <a href="/news"
+        class="f5 link dib white bg-primary hover-bg-dark-blue pv3 ph4 br2 fw6 mr3-l mb3 mb0-l transition-all">
+        Наші новини
+      </a>
+      <a href="/contact"
+        class="f5 link dib white bg-transparent ba b--white hover-bg-white hover-black pv3 ph4 br2 fw6 transition-all">
+        Контакти
+      </a>
     </div>
   </div>
 </div>

@@ -1,0 +1,15 @@
+{
+    "frontMatter.framework.id": "hugo",
+    "frontMatter.content.publicFolder": "static",
+    "frontMatter.preview.host": "http://localhost:1313",
+    "frontMatter.content.pageFolders": [
+        {
+            "path": "[[workspace]]/site/content/post/brewing-chemex"
+        },
+        {
+            "title": ".github",
+            "path": "[[workspace]]/.github"
+        }
+    ],
+    "frontMatter.git.enabled": false
+}

@@ -1,0 +1,79 @@
+<div class="bg-off-white pv5">
+    <div class="mw8 center ph3">
+        <div class="flex flex-column flex-row-l items-start justify-between">
+
+            <!-- Left Column: Text & Info -->
+            <div class="w-100 w-50-l pr4-l mb5 mb0-l">
+                <h2 class="f2 b lh-title mb3 primary">Будьте в курсі подій!</h2>
+                <p class="f4 lh-copy grey-3 mb4">
+                    Ми активно висвітлюємо життя гімназії на нашій офіційній сторінці у Facebook.
+                    Щодня нові фото, звіти з уроків, оголошення та досягнення наших учнів.
+                </p>
+
+                <ul class="list pl0 mt4 mb4">
+                    <li class="flex items-center mb3">
+                        <span class="mr3 f4">📸</span>
+                        <span class="f5 b grey-4">Фотозвіти</span>
+                    </li>
+                    <li class="flex items-center mb3">
+                        <span class="mr3 f4">📢</span>
+                        <span class="f5 b grey-4">Оголошення</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr3 f4">🏆</span>
+                        <span class="f5 b grey-4">Досягнення</span>
+                    </li>
+                </ul>
+
+                <a href="https://www.facebook.com" target="_blank"
+                    class="f5 link dib white bg-primary hover-bg-dark-blue pv3 ph4 br2 fw6 transition-all">
+                    Перейти на Facebook
+                </a>
+            </div>
+
+            <!-- Right Column: Facebook Embed -->
+            <div class="w-100 w-50-l bg-white pa1 br3 shadow-4">
+                <!-- Using a placeholder iframe for now. User should replace href=... with their actual page -->
+                <div class="overflow-hidden br2" style="height: 500px;">
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flubny.ukg&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="100%" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Website News Grid (Below) -->
+        <div class="mt6 pt5 bt b--grey-2">
+            <div class="flex justify-between items-end mb4">
+                <h3 class="f2 b lh-title mb0">Новини на сайті</h3>
+                <a href="/post" class="link primary b f5">Всі новини →</a>
+            </div>
+
+            <div class="flex flex-wrap mhn2">
+                {{ range first 3 (where .Data.Pages "Type" "post") }}
+                <div class="w-100 w-third-l ph2 mb4">
+                    <div class="bg-white pa4 br3 shadow-4 h-100 flex flex-column">
+                        <div class="mb3 flex items-center">
+                            <span class="f7 ttu tracked fw6 primary bg-washed-blue pa1 br1">{{ .Date.Format "02 Jan"
+                                }}</span>
+                        </div>
+                        <h4 class="f4 b lh-title mb3 pointer hover-primary transition-all">
+                            <a href="{{ .RelPermalink }}" class="link black hover-primary">{{ .Title }}</a>
+                        </h4>
+                        <p class="f5 lh-copy grey-3 mb4 flex-auto">
+                            {{ .Summary | truncate 120 }}
+                        </p>
+                        <div class="tr">
+                            <a href="{{ .RelPermalink }}" class="link primary b f6">Читати далі</a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+    </div>
+</div>
