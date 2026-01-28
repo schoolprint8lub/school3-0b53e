@@ -1,17 +1,23 @@
-:root {
-	/* Colors: Modern School Palette */
-	--primary: #2563eb; /* Royal Blue */
-	--highlight: #f59e0b; /* Amber/Gold */
+	/* Colors: Modern Green School Palette */
+	--primary: #154734;
+	/* Deep Green (like the gymnasia screenshot) */
+	--primary-light: #2c6e54;
+	--highlight: #f59e0b;
+	/* Gold */
+	--accent: #fcd34d;
+	/* Lighter Gold */
 	--white: #ffffff;
-	--off-white: #f8fafc;
-	--grey-1: #f1f5f9;
-	--grey-2: #e2e8f0;
-	--grey-3: #64748b;
-	--grey-4: #475569;
-	--black: #0f172a;
+	--off-white: #f9fafb;
+	--grey-1: #f3f4f6;
+	--grey-2: #e5e7eb;
+	--grey-3: #6b7280;
+	--grey-4: #374151;
+	--black: #111827;
 
 	/* Typography */
-	--font-family: 'Inter', system-ui, sans-serif;
+	--font-family: 'Inter',
+	system-ui,
+	sans-serif;
 	--line-height: 1.6;
 
 	--font-size: 16px;
@@ -34,4 +40,4 @@
 	/* Miscellaneous */
 	--border-radius: 0.5rem;
 	--hover-transition: all 200ms ease;
-}
+	}
